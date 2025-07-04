@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Students>
+  <Student id="12345" grade="9">
+    <Name first="Alice" last="Smith" />
+    <Subjects>
+      <Subject>Math</Subject>
+      <Subject>English</Subject>
+      <Subject>Science</Subject>
+    </Subjects>
+  </Student>
+  <Student id="54321" grade="10">
+    <Name first="Bob" last="Johnson" />
+    <Subjects>
+      <Subject>History</Subject>
+      <Subject>Art</Subject>
+      <Subject>Language</Subject>  
+    </Subjects>
+  </Student>
+</Students>
