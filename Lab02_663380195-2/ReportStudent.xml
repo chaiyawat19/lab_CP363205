@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ReportStudent>
+    <Term term="Summer 2024" />
+    <Student studentName="Apichai Tinjong" id="12345">
+        <Subjects>
+            <Subject subjectName="Math">
+                <Type type="Quiz">
+                    <Score score="85" />
+                </Type>
+                <Type type="Exam">
+                    <Score score="92" />
+                </Type>
+            </Subject>
+            <Subject subjectName="Science">
+                <Type type="Assignment">
+                    <Score score="78" />
+                </Type>
+                <Type type="Project">
+                    <Score score="90" />
+                </Type>
+            </Subject>
+        </Subjects>
+    </Student>
+</ReportStudent>
