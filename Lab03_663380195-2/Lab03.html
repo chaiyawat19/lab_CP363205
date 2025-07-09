@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>XML DOM with AJAX Lab</title>
+  <script src="script.js"></script>
+  <style>
+    body {
+        font-family: helvetica;
+        margin: 1em 34%;
+    }
+    button{
+        margin: 1em 0;
+        padding: 0.5em 1em;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .btnContainer {
+        display: flex;
+        justify-content: right;
+        gap: 1em;
+        text-align: center;
+        
+    }
+    #hideBtn, #loadBtn {
+        border-radius: 1em;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+    #hideBtn:hover, #loadBtn:hover {
+        background-color: #f0f0f0;
+    }
+    .movie-card {
+        border: 1px solid #ccc;
+        padding: 1em;
+        margin-bottom: 1em;
+        border-radius: 0.5em;
+        background-color: #f9f9f9;
+    }
+    .movie-card:hover {
+        background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div id="xmlDataContainer"></div>
+  <div class="btnContainer">
+      <button id="loadBtn" onclick="loadXML()">Load</button>
+      <button id="hideBtn" onclick="HideXML()">Hide</button>
+  </div>
+</body>
+
+</html>
