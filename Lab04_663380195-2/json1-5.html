@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <!-- CSS Code -->
+    <style>
+      table.GeneratedTable {
+        width: 60%;
+
+        background-color: #ffffff;
+        border-collapse: collapse;
+        border-width: 2px;
+        border-color: #ffcc00;
+        border-style: solid;
+        color: #000000;
+      }
+      table.GeneratedTable td,
+      table.GeneratedTable th {
+        border-width: 2px;
+        border-color: #ffcc00;
+        border-style: solid;
+        padding: 3px;
+      }
+
+      table.GeneratedTable thead {
+        background-color: #ffcc00;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="id01"></div>
+    <table class="GeneratedTable">
+      <thead>
+        <tr>
+          <th>CEO Name</th>
+          <th>Num of Emp</th>
+          <th>State Address</th>
+          <th>Latitude</th>
+          <th>Longtitude</th>
+        </tr>
+      </thead>
+
+      json1-5.html LAB 2 JSON AND JAVASCRIPT 27
+
+      <tbody>
+        <tr>
+          <td><span class="c01"></span></td>
+          <td><span class="c01"></span></td>
+          <td><span class="c01"></span></td>
+          <td><span class="c01"></span></td>
+          <td><span class="c01"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      const jsontxt = `{"name": "Sun Star","numberEmp": 10000,"ceo": "Mary Jane","address": { "state": "NY","geo": { "lat": "40.7128 N", "long": "74.0060 W" }}}`;
+
+      const jsonData = JSON.parse(jsontxt);
+
+      const cells = document.querySelectorAll(".c01");
+      cells[0].textContent = jsonData.ceo;
+      cells[1].textContent = jsonData.numberEmp;
+      cells[2].textContent = jsonData.address.state;
+      cells[3].textContent = jsonData.address.geo.lat;
+      cells[4].textContent = jsonData.address.geo.long;
+    </script>
+  </body>
+</html>

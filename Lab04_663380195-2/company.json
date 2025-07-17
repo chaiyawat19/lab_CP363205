@@ -1,0 +1,34 @@
+{
+    "companies": [
+        {
+            "name": "Sun Star",
+            "numberEmp": 10000,
+            "ceo": "May Jane",
+            "address": {
+                "addno": "124",
+                "street": "Robinson",
+                "state": "NY",
+                "zipcode": "85444",
+                "geo": {
+                    "lat": "40.7128° N",
+                    "long": "74.0060° W"
+                }
+            }
+        },
+        {
+            "name": "NTC",
+            "numberEmp": 25000,
+            "ceo": "William Lee",
+            "address": {
+                "addno": "256",
+                "street": "Landy",
+                "state": "WA",
+                "zipcode": "65222",
+                "geo": {
+                    "lat": "47.7511° N",
+                    "long": "120.7401° W"
+                }
+            }
+        }   
+    ]
+}
