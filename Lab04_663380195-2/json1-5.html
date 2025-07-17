@@ -39,29 +39,44 @@
         </tr>
       </thead>
 
-      json1-5.html LAB 2 JSON AND JAVASCRIPT 27
+      
 
       <tbody>
         <tr>
           <td><span class="c01"></span></td>
-          <td><span class="c01"></span></td>
-          <td><span class="c01"></span></td>
-          <td><span class="c01"></span></td>
-          <td><span class="c01"></span></td>
+          <td><span class="c02"></span></td>
+          <td><span class="c03"></span></td>
+          <td><span class="c04"></span></td>
+          <td><span class="c05"></span></td>
         </tr>
       </tbody>
     </table>
     <script>
-      const jsontxt = `{"name": "Sun Star","numberEmp": 10000,"ceo": "Mary Jane","address": { "state": "NY","geo": { "lat": "40.7128 N", "long": "74.0060 W" }}}`;
+      const jsontxt = `{"name": "Sun Star","numberEmp": 10000,"ceo": "Mary Jane","address": { "state": "NY","geo": { "lat": "40.7128 N", "long": "-74.0060 W" }}}`;
 
       const jsonData = JSON.parse(jsontxt);
+      
+      const title = document.getElementById("id01");
+      const h1 = document.createElement("h1");
 
-      const cells = document.querySelectorAll(".c01");
-      cells[0].textContent = jsonData.ceo;
-      cells[1].textContent = jsonData.numberEmp;
-      cells[2].textContent = jsonData.address.state;
-      cells[3].textContent = jsonData.address.geo.lat;
-      cells[4].textContent = jsonData.address.geo.long;
+      h1.textContent = jsonData.name + " Company";
+      title.appendChild(h1);
+
+
+
+
+      const cell1 = document.querySelector(".c01");
+      cell1.textContent = jsonData.ceo;
+      const cell2 = document.querySelector(".c02");
+      cell2.textContent = jsonData.numberEmp;
+      const cell3 = document.querySelector(".c03");
+      cell3.textContent = jsonData.address.state;
+      const cell4 = document.querySelector(".c04");
+      cell4.textContent = jsonData.address.geo.lat;
+      const cell5 = document.querySelector(".c05");
+      cell5.textContent = jsonData.address.geo.long;
+
+     
     </script>
   </body>
 </html>
