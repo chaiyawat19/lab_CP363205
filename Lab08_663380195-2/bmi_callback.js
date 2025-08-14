@@ -24,11 +24,11 @@ function calBMI(weight, height, callback) {
 // })
 
 calBMI(50, 1.56, (result, msg)=> {
-    console.log(`BMI: ${result}, Message: ${msg}`);
+    console.log(`BMI: ${result} ==> ${msg}`);
     calBMI(45, 2.0, (result, msg)=> {
-        console.log(`BMI: ${result}, Message: ${msg}`);
+        console.log(`BMI: ${result} ==> ${msg}`);
         calBMI(60, 1.75, (result, msg)=> {
-            console.log(`BMI: ${result}, Message: ${msg}`);
+            console.log(`BMI: ${result} ==> ${msg}`);
         })
     }) 
 })

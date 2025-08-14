@@ -15,18 +15,18 @@ async function calBMIAsync(weight, height) {
             }
             resolve({ bmi: bmi.toFixed(2), message });
         }, 3000);
-        console.log('ข้ามจ้า')
+        // console.log('ข้ามจ้า')
     });
 }
 
 async function main() {
     let result = await calBMIAsync(50, 1.56);
     // console.log("เทส")
-    console.log(`BMI: ${result.bmi}, Message: ${result.message}`);
+    console.log(`BMI: ${result.bmi} ==> ${result.message}`);
     result = await calBMIAsync(45, 2.0);
-    console.log(`BMI: ${result.bmi}, Message: ${result.message}`);
+    console.log(`BMI: ${result.bmi} ==> ${result.message}`);
     result = await calBMIAsync(60, 1.75);
-    console.log(`BMI: ${result.bmi}, Message: ${result.message}`);
+    console.log(`BMI: ${result.bmi} ==> ${result.message}`);
 }
 
 main()

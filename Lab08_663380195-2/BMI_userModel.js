@@ -23,4 +23,4 @@ function calculateBMI(weight, height) {
 
 module.exports = calculateBMI
 
-// ระบุว่าไฟล์นี้ “ส่งออก” function calculateBMI ไปให้ไฟล์อื่นใช้
+// ระบุว่าไฟล์นี้ “ส่งออก” function calculateBMI ไปให้ไฟล์อื่นใช้ได้

@@ -2,7 +2,7 @@ function calBMIPromise(weight, height) {
     console.log(`Calculating BMI for weight: ${weight} kg and height: ${height} m`);
     // create Pronise
     return new Promise((resolve) => {
-        // Asynchronous การทำงานที่ไม่ต้องรอให้เสร็จทีละขั้น ตัวอย่างคือ setTimeout 3 วิ จะไม่รอและข้ามไปทำตัวอื่นก่อน
+        // Asynchronous การทำงานที่ไม่ต้องรอให้เสร็จทีละขั้น ตัวอย่างคือ setTimeout 3 วิ เพื่อจะเลียนแบบการทำงานแบบ Synchorous
         setTimeout(() => {
             const bmi = weight / (height * height)
             let message;
@@ -24,14 +24,14 @@ function calBMIPromise(weight, height) {
 
 calBMIPromise(50, 1.56)
 .then(({bmi, message}) => {
-    console.log(`BMI: ${bmi}, Message: ${message}`);
+    console.log(`BMI: ${bmi} ==> ${message}`);
     return calBMIPromise(45, 2.0);
 })
-// .then(({bmi, message}) => {
-//     console.log(`BMI: ${bmi}, Message: ${message}`);
-//     return calBMIPromise(60, 1.75);
-// }).then(({bmi, message}) => {
-//     console.log(`BMI: ${bmi}, Message: ${message}`);
-// })
+.then(({bmi, message}) => {
+    console.log(`BMI: ${bmi} ==> ${message}`);
+    return calBMIPromise(60, 1.75);
+}).then(({bmi, message}) => {
+    console.log(`BMI: ${bmi} ==> ${message}`);
+})
 
 // Promise Chain
