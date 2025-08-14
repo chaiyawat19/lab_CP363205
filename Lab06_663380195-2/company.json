@@ -1,0 +1,35 @@
+{
+    "employees": [
+        {
+            "epmID": "e0001",
+            "epmName": "Smith Loy",
+            "email": "smith Loy",
+            "deptID": "d01"
+        },
+        {
+            "empID": "e0002",
+            "epmName": "Marry Jane",
+            "email": "mar@gmail.com",
+            "deptID": "d01"
+        },
+        {
+            "empID": "e0003",
+            "empName": "Willy Mac",
+            "email": "will@gmail.com",
+            "deptID": "d02"
+        }
+    ],
+    "departments": [
+        {
+            "deptID": "d01",
+            "deptName": "Computer Support",
+            "tel": "08555554"
+        },
+        {
+            "deptID": "d02",
+            "deptName": "Sales",
+            "tel": "09644524"
+        }
+    ]
+}
+

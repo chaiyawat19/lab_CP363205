@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "688b3fbc53a263f8c33ada98"
+  },
+  "empID": "e0001",
+  "empName": "Smith Loy",
+  "email": "smith@gmail.com",
+  "deptID": "d01"
+},
+{
+  "_id": {
+    "$oid": "688b423653a263f8c33ada9a"
+  },
+  "empID": "e0002",
+  "empName": "Marry Jane",
+  "email": "mar@gmail.com",
+  "deptID": "d01"
+},
+{
+  "_id": {
+    "$oid": "688b427a53a263f8c33ada9b"
+  },
+  "empID": "e0003",
+  "empName": "Willy Mac",
+  "email": "will@gmail.com",
+  "deptID": "d02"
+}]

@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "688b42aa53a263f8c33ada9d"
+  },
+  "deptID": "d01",
+  "deptName": "Computer Support",
+  "tel": "08555554"
+},
+{
+  "_id": {
+    "$oid": "688b42d453a263f8c33ada9e"
+  },
+  "deptID": "d02",
+  "deptName": "Sales",
+  "tel": "09644524"
+}]
