@@ -15,7 +15,7 @@ async function calBMIAsync(weight, height) {
             }
             resolve({ bmi: bmi.toFixed(2), message });
         }, 3000);
-        // console.log('ข้ามจ้า')
+        console.log('ข้ามจ้า')
     });
 }
 
